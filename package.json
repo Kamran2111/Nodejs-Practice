@@ -1,0 +1,20 @@
+{
+  "name": "node-website-practice",
+  "version": "1.0.0",
+  "description": "web-site-practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "practice",
+    "website"
+  ],
+  "author": "Камран Раджабов",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}

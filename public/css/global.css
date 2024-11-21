@@ -1,0 +1,510 @@
+/* Общие стили */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+/* Стили для Header */
+.header {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__button {
+  padding: 16px 35px 16px 35px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+/* Стили для Main */
+.main {
+  padding: 52px 24px;
+  background-color: #f5f5f5;
+}
+.search {
+  margin: 0 160px 48px 160px;
+}
+.search__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.search__input {
+  margin: 16px 0 16px 16px;
+  width: 544px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.38);
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  border: none;
+}
+.search__button {
+  border: none;
+  padding: 16px 16px 16px 0;
+  background-color: #f5f5f5;
+}
+
+.favorite {
+  margin: 0 166px 100px 166px;
+}
+.favorite-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.favorite-container__title {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.favorite-device {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 12px;
+}
+
+.favorite-device__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 8px;
+}
+
+.favorite-device__appelation,
+.favorite-device__status {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.favorite-device__list {
+  padding: 0 12px;
+}
+
+.favorite-device__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.favorite-device__item:last-child {
+  border-bottom: none;
+}
+
+.favorite-device__name {
+  flex-grow: 1;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.favorite-device__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.favorite-device__subtitle {
+  min-width: 652px;
+  margin-left: 12px;
+}
+
+/* Стили для страницы аналитики */
+
+.device-details__section {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  margin: 52px 96px;
+}
+.device-details {
+  padding: 52px 96px;
+  background-color: #f5f5f5;
+}
+
+.device-details__section {
+  background-color: #fff;
+}
+
+.device-details__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.device-details__user-image {
+  width: 40px;
+  height: 40px;
+  margin: 16px;
+}
+.device-details__title {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.device-details__serial-number {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.device-details__header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.device-details__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.device-details__status-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(35, 176, 74);
+  border-radius: 4px 2px 2px 4px;
+  padding: 2px 4px 2px 8px;
+  color: rgb(35, 176, 74);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 8px 8px 8px 238px;
+}
+
+.device-details__icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.device-details__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.device-details__control-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px 8px 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  background-color: #fff;
+}
+.device-details__control-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.device-details__control-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.device-details__save-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: rgb(35, 176, 74);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.device-details__save-button__stick {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 16px;
+  transform: rotate(90deg);
+  background: rgb(194, 231, 200);
+}
+.device-details__endpoint-icon {
+  width: 24px;
+  height: 24px;
+}
+.device-details__date-range {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+}
+
+.device-details__date {
+  color: rgb(60, 60, 60);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgb(255, 255, 255);
+  padding: 10px 8px 10px 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.device-details__arrow-right {
+  width: 16px;
+  height: 16px;
+  padding: 10px 12px;
+}
+
+.device-details__periods {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 20px 16px;
+}
+.device-details__period {
+  border-radius: 16px;
+  background: rgba(33, 33, 33, 0.08);
+  padding: 6px 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.device-details__period:nth-child(3) {
+  background: rgb(194, 231, 200);
+}
+
+.device-details__list {
+  padding: 12px 16px;
+}
+.device-details__list-header {
+  display: grid;
+  grid-template-columns: 160px 130px 486px 140px 140px;
+  gap: 10px;
+  margin: 12px 16px;
+}
+.device-details__list-header-item {
+  color: rgba(0, 0, 0, 0.38);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.device-details__list-item {
+  display: grid;
+  grid-template-columns: 160px 130px 486px 140px 140px;
+  min-height: 124px;
+  margin: 12px 16px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
+.device-details__list-date {
+  color: rgba(0, 0, 0, 0.38);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px;
+}
+.device-details__list-work {
+  padding: 12px;
+}
+.device-details__list-status {
+  color: rgb(35, 176, 74);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.device-details__list-type {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.device-details__list-description {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+}
+
+.device-details__list-description-label {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.device-details__list-user {
+  color: rgb(46, 155, 194);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px;
+}
+.device-details__list-cleaning {
+  position: relative;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px;
+}
+.device-details__list-cleaning-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 6px 92px 0;
+}
+.device-details__list-details {
+  padding: 12px;
+}
+.device-details__list-detail {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.device-details__list-detail-label {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Стили для Error.page */
+
+.error-page {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.error-content {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.error-title {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.error-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  font-size: 16px;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

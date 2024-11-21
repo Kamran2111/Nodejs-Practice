@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/">
+          <img src="../images/Logo.png" alt="LOGO" />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <button class="nav__button" onclick="window.location.href='/'">
+              Главная
+            </button>
+          </li>
+          <li class="nav__item">
+            <button
+              class="nav__button"
+              onclick="window.location.href='/analytics'"
+            >
+              Аналитика
+            </button>
+          </li>
+        </ul>
+        <a href="#">
+          <img src="../images//User.png" alt="ICON" />
+        </a>
+      </nav>
+    </header>
+    <main class="device-details">
+      <section class="device-details__section">
+        <!-- Заголовок с информацией о приборе -->
+        <div class="device-details__header">
+          <div class="device-details__header-inner">
+            <img
+              class="device-details__user-image"
+              src="../images/User.png"
+              alt="Пользователь"
+            />
+            <div class="device-details__info">
+              <h1 class="device-details__title">
+                pH-метр Mettler-Toledo International, Inc. SevenCompact S220
+              </h1>
+              <span class="device-details__serial-number"
+                >S1.4.I14-9.001 00-024004</span
+              >
+            </div>
+          </div>
+
+          <div class="device-details__inner">
+            <div class="device-details__actions">
+              <button class="device-details__status-button">
+                В работе
+                <img
+                  class="device-details__arrow-icon"
+                  src="../images/arrow_drop_down.png"
+                  alt="Иконка стрелки"
+                />
+              </button>
+              <img
+                class="device-details__icon"
+                src="../images/Like.png"
+                alt="Иконка лайка"
+              />
+              <img
+                class="device-details__icon"
+                src="../images/Settings.png"
+                alt="Иконка настроек"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Управление прибором -->
+        <div class="device-details__control">
+          <button class="device-details__control-button">
+            Работа прибора
+            <img
+              class="device-details__arrow-icon"
+              src="../images/arrow_drop_down.png"
+              alt="Иконка стрелки"
+            />
+          </button>
+          <div class="device-details__control-actions">
+            <img
+              class="device-details__control-icon"
+              src="../images/2. Text+Icon.png"
+              alt="Иконка дома"
+            />
+            <button class="device-details__save-button">
+              Сохранить PDF
+              <span class="device-details__save-button__stick"></span>
+              <img
+                class="device-details__endpoint-icon"
+                src="../images/iconEND.png"
+                alt="Иконка конца"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Диапазон дат -->
+        <div class="device-details__date-range">
+          <span class="device-details__date">
+            07.10.2021, 10:55
+            <img
+              class="device-details__date-icon"
+              src="../images/data.png"
+              alt="Иконка даты"
+            />
+          </span>
+          <img
+            class="device-details__arrow-right"
+            src="../images/arrow-right.png"
+            alt="Иконка стрелки"
+          />
+          <span class="device-details__date">
+            21.10.2021, 10:55
+            <img
+              class="device-details__date-icon"
+              src="../images/data.png"
+              alt="Иконка даты"
+            />
+          </span>
+        </div>
+
+        <!-- Периоды -->
+        <div class="device-details__periods">
+          <p class="device-details__period">День</p>
+          <p class="device-details__period">Неделя</p>
+          <p class="device-details__period">2 недели</p>
+          <p class="device-details__period">Месяц</p>
+          <p class="device-details__period">3 месяца</p>
+          <p class="device-details__period">Полгода</p>
+        </div>
+
+        <!-- Таблица с данными -->
+        <ul class="device-details__list">
+          <!-- Заголовки таблицы -->
+          <li class="device-details__list-header">
+            <p class="device-details__list-header-item">Начало</p>
+            <p class="device-details__list-header-item">Тип работ</p>
+            <p class="device-details__list-header-item">Работы</p>
+            <p class="device-details__list-header-item">Результат</p>
+            <p class="device-details__list-header-item">Пользователь</p>
+          </li>
+
+          <!-- Строка данных -->
+          <li class="device-details__list-item">
+            <p class="device-details__list-date">09.10.2021, 15:46</p>
+            <div class="device-details__list-work">
+              <p class="device-details__list-status">В работе</p>
+              <p class="device-details__list-type">Измерение</p>
+            </div>
+            <p class="device-details__list-description">
+              <span class="device-details__list-description-label"
+                >Образец/серия:</span
+              >
+              000100057935_170000010325_0000251849
+            </p>
+            <p class="device-details__list-cleaning">
+              <img
+                class="device-details__list-cleaning-icon"
+                src="../images/okey.png"
+                alt="OKEY ICON"
+              />
+            </p>
+            <p class="device-details__list-user">morozovava</p>
+          </li>
+
+          <li class="device-details__list-item">
+            <p class="device-details__list-date">12.10.2021, 12:17</p>
+            <div class="device-details__list-work">
+              <p class="device-details__list-status">В работе</p>
+              <p class="device-details__list-type">Калибровка</p>
+            </div>
+            <div class="device-details__list-details">
+              <p class="device-details__list-detail">
+                <span class="device-details__list-detail-label"
+                  >Номер колонки:</span
+                >
+                Колонка 2
+              </p>
+              <p class="device-details__list-detail">
+                <span class="device-details__list-detail-label">Образец:</span>
+                Образец 2
+              </p>
+              <p class="device-details__list-detail">
+                <span class="device-details__list-detail-label">Образец:</span>
+                образец 1
+              </p>
+              <p class="device-details__list-detail">
+                <span class="device-details__list-detail-label">Метод:</span>
+                метов тестовый
+              </p>
+              <p class="device-details__list-detail">
+                <span class="device-details__list-detail-label"
+                  >Номер колонки:</span
+                >
+                Колонка 1
+              </p>
+            </div>
+
+            <p class="device-details__list-cleaning">
+              Промывка с указанием вещества: Вещество ...
+              <img
+                class="device-details__list-cleaning-icon"
+                src="../images/okey.png"
+                alt="OKEY ICON"
+              />
+            </p>
+            <p class="device-details__list-user">morozovava</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
